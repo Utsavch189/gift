@@ -252,7 +252,8 @@
     <script>
         document.addEventListener("click", go);
 
-        function go() {
+        function go(e) {
+             e.preventDefault();
             let valu = document.getElementById('text').value;
             let msg = document.getElementById('span');
             let h = document.getElementById('h');
